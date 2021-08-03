@@ -1,5 +1,5 @@
 const { MessageEmbed } = require('discord.js');
-const cfg = require('../../Struct/cfg.json');
+const cfg = require('../../struct/cfg.json');
 let allowed = [
     '~', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '-', '_', '=', '+',
     'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p',

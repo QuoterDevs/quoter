@@ -1,6 +1,6 @@
 const { MessageEmbed, DiscordAPIError } = require('discord.js');
-const cfg = require('../Struct/cfg.json');
-const { cooldown } = require('../Struct/Managers/cooldownManager');
+const cfg = require('../struct/cfg.json');
+const { cooldown } = require('../struct/managers/cooldownManager');
 
 module.exports = async(client, eventName, oldMessage, message) => {
     if(oldMessage.content === message.content) return;

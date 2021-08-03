@@ -1,5 +1,5 @@
 const { MessageEmbed } = require("discord.js");
-const cfg = require('../../Struct/cfg.json');
+const cfg = require('../../struct/cfg.json');
 const { readdirSync } = require('fs');
 
 module.exports = {

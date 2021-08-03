@@ -15,7 +15,7 @@ let allowed = [
 ]
 
 const { MessageEmbed } = require('discord.js');
-const cfg = require('../../Struct/cfg.json');
+const cfg = require('../../struct/cfg.json');
 
 module.exports = {
     name: 'correct',

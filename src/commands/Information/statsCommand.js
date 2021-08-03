@@ -1,5 +1,5 @@
 const { MessageEmbed } = require('discord.js');
-const cfg = require('../../Struct/cfg.json');
+const cfg = require('../../struct/cfg.json');
 function count(number) {
     let rez = Math.round(number);
     return (rez + '').replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
