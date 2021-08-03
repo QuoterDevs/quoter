@@ -1,0 +1,22 @@
+{
+  "CREATE_INSTANT_INVITE": "Create invites",
+  "KICK_MEMBERS": "Kick members",
+  "BAN_MEMBERS": "Ban members",
+  "ADMINISTRATOR": "Administrator",
+  "MANAGE_CHANNELS": "Manage channels",
+  "MANAGE_GUILD": "Manage guild",
+  "ADD_REACTIONS": "Add reactions",
+  "VIEW_AUDIT_LOG": "View audit logs",
+  "VIEW_CHANNEL": "View channel",
+  "SEND_MESSAGES": "Send messages",
+  "MANAGE_MESSAGES": "Manage messages",
+  "EMBED_LINKS": "Embed links",
+  "ATTACH_FILES": "Attach files",
+  "READ_MESSAGE_HISTORY": "Read messages history",
+  "MENTION_EVERYONE": "Mention everyone",
+  "USE_EXTERNAL_EMOJIS": "Use external emojis",
+  "CHANGE_NICKNAME": "Change nickname",
+  "MANAGE_ROLES": "Manages roles",
+  "MANAGE_NICKNAMES": "Manage nicknames",
+  "MOVE_MEMBERS": "Move members"
+}

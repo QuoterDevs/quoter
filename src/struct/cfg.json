@@ -1,0 +1,18 @@
+{
+    "colors": {
+        "ok": "#7289da",
+        "error": "#FF4040",
+        "moder": "#FFB140",
+        "dev": "#808080",
+        "reaction": "#3E83D1",
+        "nsfw": "#FF7373",
+        "green": "#25c059"
+    },
+    "cooldowns": {
+        "private": 5,
+        "prefix": 5,
+        "language": 5,
+        "namecorrector": 300,
+        "correct": 500
+    }
+}

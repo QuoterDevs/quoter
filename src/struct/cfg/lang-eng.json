@@ -1,0 +1,78 @@
+{
+    "global": {
+        "error": "An error was occurred",
+        "cooldown": ">>> Wait %time% more seconds before next command usage",
+        "noPermsMember": ">>> You haven't enough perms. \nRequired perms: %perms% or moderator role",
+        "noPermsBot": ">>> I haven't enough perms to perform this command. \nRequired perms: %perms%",
+        "ping": ">>> Hello! I'm %bot% - multipurpose bot for Discord!\nAs prefix you can use `%prefix%`\nFor full help you can write `%prefix%help`",
+        "noArgs": ">>> You haven't provide any arguments.\n Try use it like bellow: `%usage%`",
+        "errors": {
+            "api": ">>> An error was occurred while command executing. Check my permissions for properly work.",
+            "default": ">>> An error was occurred while command executing."
+        }
+    },
+    "help": {
+        "titleNoArgs": "List of bot commands",
+        "titleArgs": "%command%'s info",
+        "descriptionNoArgs": ">>> All bot commands are listed here\nTo see more, write `%prefix%help [command]`",
+        "descriptionArgs": ">>> Remember this:\n`<>` - required argument\n`[]` - not required argument",
+        "noCommand": ">>> There are not command found for current argument, try another",
+        "fields": [ "Aliases", "Description", "Usage", "Cooldown" ]
+    },
+    "prefix": {
+        "prefixToLong": ">>> Specified prefix is too long, try another, that shorter than 5 symbols",
+        "invalidSymbol": ">>> Specified prefix has forbidden symbol ` %letter% `",
+        "samePrefix": ">>> This prefix is currently used as default",
+        "success": ">>> Prefix was successfully changed"
+    },
+    "private": {
+        "created": ">>> There no channel and category i've found, so i made it!",
+        "disabled": ">>> Private voice rooms were disabled!",
+        "enabled": ">>> Private voice rooms were enabled!",
+        "categoryName": "Private rooms",
+        "channelName": "[+] Create room"
+    },
+    "namecorrector": {
+        "enabled": ">>> Nickname corrector was enabled. %count% members were changed!",
+        "disabled": ">>> Nickname corrector was disabled"
+    },
+    "correct": {
+        "disabled": ">>> Nickname corrector is disabled now. Why are you use this command?",
+        "launched": ">>> There were changed %count% members",
+        "noOne": ">>> No one were changed!"
+    },
+    "moderator": {
+        "updated": ">>> Specified roles were added as moderators",
+        "included": ">>> Role %role% is currently known as moderator"
+    },
+    "stats": {
+        "title": "Bot statistics",
+        "guilds": "Guilds count",
+        "users": "Users count",
+        "shards": "Shards statistics",
+        "ram": "RAM usage",
+        "footer": "Commands proceed: %commands% | Events per second: %events%",
+        "links": [ "Links", "**[Add bot](%addLink%) | [Support server](%serverLink%)**" ]
+    },
+    "djs": {
+        "requestError": ">>> There were an error while making request"
+    },
+    "settings": {
+        "title": "%guildName%'s settings",
+        "prefix": "Guild prefix",
+        "lang": "Guild language",
+        "roles": "Moderator roles",
+        "private": "Private voice rooms",
+        "corrector": "Nickname corrector",
+        "userPrefix": "Your prefix"
+    },
+    "language": {
+        "changed": ">>> Language was successfully changed to English"
+    },
+    "self-prefix": {
+        "prefixToLong": ">>> Specified prefix is too long, try another, that shorter than 5 symbols",
+        "invalidSymbol": ">>> Specified prefix has forbidden symbol ` %letter% `",
+        "samePrefix": ">>> This prefix is currently used as default",
+        "success": ">>> Prefix was successfully changed"
+    }
+}
