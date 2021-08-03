@@ -1,5 +1,5 @@
 const { Client, Collection, Intents } = require('discord.js');
-const CacheManager = require('./Managers/cacheManager');
+const CacheManager = require('./managers/cacheManager');
 
 module.exports = class extends Client {
     constructor(config) {
