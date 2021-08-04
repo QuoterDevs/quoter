@@ -44,7 +44,7 @@ module.exports = async(client, eventName, message) => {
         .setTitle(client.lang[guild.lang]['global']['error'])
         .setColor(cfg.colors.error)
 
-    const perm = await require('../Struct/Managers/permissionCheckerManager')(client, message, command, errorEmbed)
+    const perm = await require('../struct/managers/permissionCheckerManager')(client, message, command, errorEmbed)
     if(!perm["message"]) {
         return message.channel.send(perm["embed"]);
     }
