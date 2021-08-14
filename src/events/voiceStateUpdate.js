@@ -2,7 +2,7 @@ module.exports = async (client, eventName, oldState, newState) => {
     if(!newState.guild.me.permissions.has('MANAGE_CHANNELS')) return
     if(!newState.guild.me.permissions.has('MOVE_MEMBERS')) return
 
-    let req = client.cache.get(newState.guild.id);
+    let req = client.cache.getGuild(newState.guild.id);
 
     if(!req.voice || !req.voice.enabled ) {
         return
