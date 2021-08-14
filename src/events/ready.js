@@ -57,7 +57,7 @@ try {
                 shards: shards,
                 users: totalMembers
             })
-        }).then(r => r.json()).then(console.info);
+        }).then(r => r.json()).then(console.info).catch(console.log);
     }
 
     if (process.env.SDC && client.user.id === '736963755904335942') {
@@ -71,7 +71,7 @@ try {
                 servers: totalGuilds,
                 shards: shards
             })
-        }).then(r => r.json()).then(console.info);
+        }).then(r => r.json()).then(console.info).catch(console.log);
     }
 } catch {}
 }
