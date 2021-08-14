@@ -44,8 +44,8 @@ module.exports = async(client, eventName) => {
             totalMembers = results[1].reduce((acc, memberCount) => acc + memberCount, 0);
             shards = results[2].length
         });
-
-    if(process.env.BOTICORD && client.user.id === '736963755904335942') {
+try {
+    if (process.env.BOTICORD && client.user.id === '736963755904335942') {
         fetch("https://boticord.top/api/stats", {
             method: 'POST',
             headers: {
@@ -60,7 +60,7 @@ module.exports = async(client, eventName) => {
         }).then(r => r.json()).then(console.info);
     }
 
-    if(process.env.SDC && client.user.id === '736963755904335942') {
+    if (process.env.SDC && client.user.id === '736963755904335942') {
         fetch("https://api.server-discord.com/v2/bots/736963755904335942/stats", {
             method: 'POST',
             headers: {
@@ -73,33 +73,5 @@ module.exports = async(client, eventName) => {
             })
         }).then(r => r.json()).then(console.info);
     }
-        if(process.env.BOTICORD && client.user.id === '736963755904335942') {
-            fetch("https://boticord.top/api/stats", {
-                method: 'POST',
-                headers: {
-                    'Authorization': process.env.BOTICORD,
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    servers: totalGuilds,
-                    shards: shards,
-                    users: totalMembers
-                })
-            }).then(r => r.json()).then(console.info);
-        }
-
-        if(process.env.SDC && client.user.id === '736963755904335942') {
-            fetch("https://api.server-discord.com/v2/bots/736963755904335942/stats", {
-                method: 'POST',
-                headers: {
-                    'Authorization': process.env.SDC,
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    servers: totalGuilds,
-                    shards: shards
-                })
-            }).then(r => r.json()).then(console.info);
-        }
-
+} catch {}
 }
