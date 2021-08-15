@@ -20,7 +20,7 @@ module.exports = async(client, eventName, oldMember, newMember) => {
     if(newMember.user.bot) return;
     const member = newMember;
 
-    const guild = client.cache.get(member.guild.id);
+    const guild = client.cache.getGuild(member.guild.id);
     if(!guild.corrector || !guild.corrector.enabled) return;
 
     let letters = member.displayName.split('');

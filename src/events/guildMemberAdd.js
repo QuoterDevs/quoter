@@ -16,7 +16,7 @@ let allowed = [
 
 module.exports = async(client, eventName, member) => {
     if(member.bot) return;
-    const guild = client.cache.get(member.guild.id);
+    const guild = client.cache.getGuild(member.guild.id);
     if(!guild.corrector || !guild.corrector.enabled) return;
 
     let letters = member.displayName.split('');

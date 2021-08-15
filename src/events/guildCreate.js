@@ -1,5 +1,5 @@
 module.exports = async (client, eventName, guild) => {
-    const cacheGuild = client.cache.get(guild.id);
+    const cacheGuild = client.cache.getGuild(guild.id);
     if(!cacheGuild) {
         const mongoGuild = await client.db.guilds.findOne({
             guildID: guild.id
