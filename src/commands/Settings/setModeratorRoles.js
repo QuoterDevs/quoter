@@ -18,8 +18,7 @@ module.exports = {
     },
     async execute(client, message, args) {
         const guild = client.cache.getGuild(message.guild.id);
-        let roles = message.mentions.roles.filter(x => !x.managed &&
-            x.position < message.guild.me.roles.highest.position).map(x => x.id) ||
+        let roles = message.mentions.roles.filter(x => !x.managed).map(x => x.id) ||
             args[0]
         if(message.guild.roles.cache.get(args[0])) {
             roles = [ args[0] ];

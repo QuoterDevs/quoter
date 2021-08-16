@@ -31,7 +31,7 @@ module.exports = {
             message.channel.send(client.lang[guild.lang]['private']["created"]);
             const json = {
                 enabled: true,
-                category: id,
+                category: id1,
                 channel: id2
             }
 
