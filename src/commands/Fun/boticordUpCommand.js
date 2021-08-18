@@ -30,5 +30,6 @@ module.exports = {
             .then(res => {
                 message.channel.send(res.message)
             })
+            .catch(() => message.channel.send('Произошла ошибка во время запроса'))
     }
 }

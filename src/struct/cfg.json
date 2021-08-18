@@ -13,6 +13,7 @@
         "prefix": 5,
         "language": 5,
         "namecorrector": 300,
-        "correct": 500
+        "correct": 500,
+        "bump": 3
     }
 }
